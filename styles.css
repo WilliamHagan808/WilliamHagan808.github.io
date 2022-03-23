@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* NAVIGATION BAR */
 .navbar{
     display: flex;
     justify-content: center;
@@ -32,4 +32,20 @@
     background-color: white;
     color:black;
     box-shadow: 0 0 10px white;
+}
+/* HOMEPAGE */
+#home{
+    display: flex;
+    flex-direction: column;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('woods.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
 }
