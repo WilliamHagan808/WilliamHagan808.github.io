@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 /* NAVIGATION BAR */
 .navbar{
@@ -24,7 +25,7 @@
 }
 .navbar ul li a{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(226, 230, 235);
     padding: 8px 25px;
     transition: all .5s ease;
 }
@@ -37,6 +38,11 @@
 #home{
     display: flex;
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 245, 245);
 }
 #home::before{
     content: "";
@@ -44,8 +50,37 @@
     top: 0;
     right: 0;
     background: url('woods.jpg') no-repeat center center/cover;
-    height: 900px;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(36, 32, 32);
+    align-items: center;
+    position: absolute;
+    top: 30%;
+}
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
 }
